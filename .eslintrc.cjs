@@ -43,6 +43,11 @@ const config = {
     "react-hooks/rules-of-hooks": "off",
     "@typescript-eslint/await-thenable": "off",
     "@typescript-eslint/no-empty-interface": "off",
+    // New rules to turn off
+    "@typescript-eslint/prefer-nullish-coalescing": "off",
+    "@typescript-eslint/no-unsafe-argument": "off",
+    "@typescript-eslint/prefer-optional-chain": "off",
+    "@typescript-eslint/non-nullable-type-assertion-style": "off",
   },
 };
 

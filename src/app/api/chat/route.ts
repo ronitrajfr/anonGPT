@@ -1,7 +1,13 @@
 import { GoogleGenerativeAI } from "@google/generative-ai";
 import { GoogleGenerativeAIStream, Message, StreamingTextResponse } from "ai";
 
-const genAI = new GoogleGenerativeAI(process.env.GEMINI_API_KEY || "");
+const apiKey = process.env.GEMINI_API_KEY;
+
+if (!apiKey) {
+  throw new Error("GEMINI_API_KEY environment variable is not set.");
+}
+
+const genAI = new GoogleGenerativeAI(apiKey);
 
 // Convert messages from the Vercel AI SDK format to the format
 // expected by the Google GenAI SDK
