@@ -85,8 +85,8 @@ const Sidebar = () => {
                     Enter your API key
                   </Dialog.Title>
                   <Dialog.Description className="DialogDescription">
-                    Enter your gemini API key to use this amazing app. Don't
-                    worry, it is stored in your own computer.
+                    Enter your gemini API key to use this amazing app.
+                    Don&apos;t worry, it is stored in your own computer.
                   </Dialog.Description>
                   <fieldset className="Fieldset">
                     <label className="Label" htmlFor="API">
@@ -142,8 +142,8 @@ const Sidebar = () => {
                       Enter your API key
                     </Dialog.Title>
                     <Dialog.Description className="DialogDescription">
-                      Enter your gemini API key to use this amazing app. Don't
-                      worry, it is stored in your own computer.
+                      Enter your gemini API key to use this amazing app.
+                      Don&apos;t worry, it is stored in your own computer.
                     </Dialog.Description>
                     <fieldset className="Fieldset">
                       <label className="Label" htmlFor="API">
