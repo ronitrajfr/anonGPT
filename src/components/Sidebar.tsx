@@ -51,12 +51,15 @@ const Sidebar = () => {
               Home
             </h1>
           </Link>
-          <div className="flex items-center gap-2 pl-2 font-medium md:mt-3 md:hover:cursor-pointer md:hover:text-gray-200">
+          <Link
+            href={"/discover"}
+            className="flex items-center gap-2 pl-2 font-medium md:mt-3 md:hover:cursor-pointer md:hover:text-gray-200"
+          >
             <Earth className="h-[20px] w-[20px] text-gray-300" />
             <h1 className="text-md font-medium text-gray-300 max-md:hidden sm:mr-4">
               Discover
             </h1>
-          </div>
+          </Link>
         </div>
       </div>
 
@@ -188,16 +191,19 @@ const Sidebar = () => {
         <hr className="mt-2 w-full border-gray-500 max-md:hidden" />
         <div className="max-md:hidden">
           <div className="mt-4 flex items-center justify-center gap-4">
-            <a href="https://ronitt.xyz">
+            <a href="https://ronitt.xyz" target="_blank">
               <Earth className="h-[20px] w-[20px] text-gray-300 md:hover:cursor-pointer md:hover:text-gray-200" />
             </a>
-            <a href="/">
+            <a
+              href="https://www.linkedin.com/in/ronit-raj-5a80b62b4/"
+              target="_blank"
+            >
               <Linkedin className="h-[20px] w-[20px] text-gray-300 md:hover:cursor-pointer md:hover:text-gray-200" />
             </a>
-            <a href="https://github.com/ronitrajfr">
+            <a href="https://github.com/ronitrajfr/anonGPT" target="_blank">
               <Github className="h-[20px] w-[20px] text-gray-300 md:hover:cursor-pointer md:hover:text-gray-200" />
             </a>
-            <a href="https://x.com/ronitrajfr">
+            <a href="https://x.com/ronitrajfr" target="_blank">
               <Twitter className="h-[20px] w-[20px] text-gray-300 md:hover:cursor-pointer md:hover:text-gray-200" />
             </a>
           </div>

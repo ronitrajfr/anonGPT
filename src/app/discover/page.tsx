@@ -1,9 +1,10 @@
 "use client";
 import React from "react";
-import Chat from "~/components/Chat";
+import Discover from "~/components/discover";
 import Sidebar from "~/components/Sidebar";
 import { useSession } from "next-auth/react";
 import { useRouter } from "next/navigation";
+
 const page = () => {
   const router = useRouter();
   const { status } = useSession();
@@ -13,7 +14,7 @@ const page = () => {
   return (
     <div>
       <Sidebar />
-      <Chat />
+      <Discover />
     </div>
   );
 };
