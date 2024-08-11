@@ -1,6 +1,7 @@
 "use client";
-import React from "react";
+import React, { useState } from "react";
 import { useSession } from "next-auth/react";
+import Link from "next/link";
 import {
   Settings,
   Search,
@@ -9,9 +10,28 @@ import {
   Twitter,
   Linkedin,
 } from "lucide-react";
+import * as Dialog from "@radix-ui/react-dialog";
+import { useToast } from "./ui/use-toast";
 
 const Sidebar = () => {
   const { data } = useSession();
+  const { toast } = useToast();
+  const [apiKey, setApiKey] = useState("");
+
+  const handleSaveChanges = () => {
+    if (apiKey) {
+      localStorage.setItem("geminiApiKey", apiKey);
+      toast({
+        title: "API key saved",
+      });
+    } else {
+      toast({
+        title: "API key is required",
+        variant: "destructive",
+      });
+    }
+  };
+
   return (
     <div className="fixed bottom-0 flex w-full items-center justify-between bg-[#141212] py-4 text-white max-md:px-6 md:left-0 md:top-0 md:h-[100%] md:w-[200px] md:flex-col">
       <div className="flex flex-col">
@@ -22,12 +42,15 @@ const Sidebar = () => {
         <hr className="w-full border-gray-500 max-md:hidden" />
 
         <div className="items-center justify-center max-md:hidden">
-          <div className="flex items-center gap-2 pl-2 font-medium md:mt-10 md:hover:cursor-pointer md:hover:text-gray-200">
+          <Link
+            href={"/home"}
+            className="flex items-center gap-2 pl-2 font-medium md:mt-10 md:hover:cursor-pointer md:hover:text-gray-200"
+          >
             <Search className="h-[20px] w-[20px] text-gray-300" />
             <h1 className="text-md font-medium text-gray-300 max-md:hidden sm:mr-4">
               Home
             </h1>
-          </div>
+          </Link>
           <div className="flex items-center gap-2 pl-2 font-medium md:mt-3 md:hover:cursor-pointer md:hover:text-gray-200">
             <Earth className="h-[20px] w-[20px] text-gray-300" />
             <h1 className="text-md font-medium text-gray-300 max-md:hidden sm:mr-4">
@@ -48,11 +71,117 @@ const Sidebar = () => {
             <h1 className="text-gray-300 max-md:hidden sm:mr-4">
               {data.user.name}
             </h1>
-            <Settings className="h-[20px] w-[20px] text-gray-300 max-md:hidden md:hover:cursor-pointer md:hover:text-gray-200" />
+            <Dialog.Root>
+              <Dialog.Trigger
+                asChild
+                className="h-[20px] w-[20px] cursor-pointer text-gray-300 max-md:hidden md:hover:cursor-pointer md:hover:text-gray-200"
+              >
+                <Settings className="" />
+              </Dialog.Trigger>
+              <Dialog.Portal>
+                <Dialog.Overlay className="DialogOverlay" />
+                <Dialog.Content className="DialogContent">
+                  <Dialog.Title className="DialogTitle">
+                    Enter your API key
+                  </Dialog.Title>
+                  <Dialog.Description className="DialogDescription">
+                    Enter your gemini API key to use this amazing app. Don't
+                    worry, it is stored in your own computer.
+                  </Dialog.Description>
+                  <fieldset className="Fieldset">
+                    <label className="Label" htmlFor="API">
+                      Your API
+                    </label>
+                    <input
+                      className="Input"
+                      id="API"
+                      placeholder="Enter your API key"
+                      value={apiKey}
+                      onChange={(e) => setApiKey(e.target.value)}
+                    />
+                  </fieldset>
+
+                  <div
+                    style={{
+                      display: "flex",
+                      marginTop: 25,
+                      justifyContent: "flex-end",
+                    }}
+                  >
+                    <Dialog.Close asChild>
+                      <button
+                        className="Button green"
+                        onClick={handleSaveChanges}
+                      >
+                        Save changes
+                      </button>
+                    </Dialog.Close>
+                  </div>
+                  <Dialog.Close asChild>
+                    <button className="IconButton" aria-label="Close">
+                      <p>x</p>
+                    </button>
+                  </Dialog.Close>
+                </Dialog.Content>
+              </Dialog.Portal>
+            </Dialog.Root>
             <div className="items-center gap-4 max-md:flex md:hidden">
               <Search className="h-[25px] w-[25px] text-gray-300 md:hover:cursor-pointer md:hover:text-gray-200" />
               <Earth className="h-[25px] w-[25px] text-gray-300 md:hover:cursor-pointer md:hover:text-gray-200" />
-              <Settings className="h-[25px] w-[25px] text-gray-300 md:hover:cursor-pointer md:hover:text-gray-200" />
+              <Dialog.Root>
+                <Dialog.Trigger
+                  asChild
+                  className="h-[25px] w-[25px] cursor-pointer text-gray-300 md:hover:cursor-pointer md:hover:text-gray-200"
+                >
+                  <Settings />
+                </Dialog.Trigger>
+                <Dialog.Portal>
+                  <Dialog.Overlay className="DialogOverlay" />
+                  <Dialog.Content className="DialogContent">
+                    <Dialog.Title className="DialogTitle">
+                      Enter your API key
+                    </Dialog.Title>
+                    <Dialog.Description className="DialogDescription">
+                      Enter your gemini API key to use this amazing app. Don't
+                      worry, it is stored in your own computer.
+                    </Dialog.Description>
+                    <fieldset className="Fieldset">
+                      <label className="Label" htmlFor="API">
+                        Your API
+                      </label>
+                      <input
+                        className="Input"
+                        id="API"
+                        placeholder="Enter your API key"
+                        value={apiKey}
+                        onChange={(e) => setApiKey(e.target.value)}
+                      />
+                    </fieldset>
+
+                    <div
+                      style={{
+                        display: "flex",
+                        marginTop: 25,
+                        justifyContent: "flex-end",
+                      }}
+                    >
+                      <Dialog.Close asChild>
+                        <button
+                          className="Button green"
+                          onClick={handleSaveChanges}
+                        >
+                          Save changes
+                        </button>
+                      </Dialog.Close>
+                    </div>
+                    <Dialog.Close asChild>
+                      <button className="IconButton" aria-label="Close">
+                        <p>x</p>
+                      </button>
+                    </Dialog.Close>
+                  </Dialog.Content>
+                </Dialog.Portal>
+              </Dialog.Root>
             </div>
           </div>
         )}
