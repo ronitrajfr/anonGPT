@@ -6,7 +6,19 @@ import Providers from "~/components/Provider";
 import { Toaster } from "~/components/ui/toaster";
 export const metadata: Metadata = {
   title: "anonGPT",
-  description: "free and open source search engine bot",
+  description:
+    "Unlock fast and accurate information retrieval with anonGPT—no more endless searching. Just the essentials delivered instantly, providing you with concise and relevant data at your fingertips. ",
+  openGraph: {
+    images: ["/header.png"],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "anonGPT",
+    description:
+      "Unlock fast and accurate information retrieval with anonGPT—no more endless searching. Just the essentials delivered instantly, providing you with concise and relevant data at your fingertips. ",
+    images: ["/header.png"],
+    creator: "@ronitrajfr",
+  },
   icons: [{ rel: "icon", url: "/logo.svg" }],
 };
 
