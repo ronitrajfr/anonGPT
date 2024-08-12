@@ -49,7 +49,7 @@ const NavbarLanding = ({ duration = 1 }) => {
           alt="logo"
         />
         <h1 className="text-2xl font-medium text-white max-sm:text-lg">
-          AnonGPT
+          anonGPT
         </h1>
       </div>
 
