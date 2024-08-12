@@ -70,7 +70,7 @@ const Main = () => {
             <div className="flex flex-col items-center justify-center space-y-4 text-center">
               <div className="space-y-2">
                 <h2 className="text-3xl font-bold tracking-tighter sm:text-5xl">
-                  Streamline Your Workflow
+                  Enhance your time
                 </h2>
                 <p className="max-w-[900px] text-gray-300 md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed">
                   Our platform offers a suite of powerful features to help you
@@ -90,8 +90,8 @@ const Main = () => {
                   Experience the power of cutting-edge AI technology that
                   understands your needs and delivers the most relevant
                   information. Our open-source solution harnesses advanced
-                  algorithms to ensure you're always in the know with minimal
-                  effort.
+                  algorithms to ensure you&apos;re always in the know with
+                  minimal effort.
                 </p>
               </div>
               <div className="grid gap-4">
