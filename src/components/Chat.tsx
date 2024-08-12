@@ -36,6 +36,9 @@ const Chat = () => {
               onSubmit={handleSubmit}
               className="relative flex w-[700px] flex-col max-md:w-[600px] max-sm:w-[360px]"
             >
+              <h1 className="mb-7 text-center text-5xl font-bold text-gray-300 max-md:text-3xl">
+                Welcome to anonGPT
+              </h1>
               <Textarea
                 value={input}
                 onChange={handleInputChange}
