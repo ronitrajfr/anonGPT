@@ -1,29 +1,43 @@
-# Create T3 App
+<h1 align="center">Say Hello to <a href="https://anon-gpt.vercel.app/">anonGPT</a>
+</h1>
+ <img width="1000" alt="header image" src="/header.png">
 
-This is a [T3 Stack](https://create.t3.gg/) project bootstrapped with `create-t3-app`.
+ 
+### **Overview**
+**anonGPT** is an open-source AI-powered application designed to revolutionize the way you search for information. Unlike traditional search engines that require you to sift through countless links, Instant Info delivers concise, accurate, and relevant data directly to you—saving you time and effort.
 
-## What's next? How do I make an app with this?
+### **Features**
+- **AI-Driven Information Retrieval**: Leverages cutting-edge AI to understand and deliver the most relevant information based on your query.
+- **Lightning-Fast Responses**: Optimized for speed, providing you with instant answers to your questions.
+- **High Accuracy**: Focuses on delivering precise and trustworthy information, ensuring you get only what’s essential.
 
-We try to keep this project as simple as possible, so you can start with just the scaffolding we set up for you, and add additional things later when they become necessary.
+### **Tech Stack:**
 
-If you are not familiar with the different technologies used in this project, please refer to the respective docs. If you still are in the wind, please join our [Discord](https://t3.gg/discord) and ask for help.
+- Nextjs
+- Postgres
+- Prisma
+- Tailwind
+- Next-Auth
+- Gemini
 
-- [Next.js](https://nextjs.org)
-- [NextAuth.js](https://next-auth.js.org)
-- [Prisma](https://prisma.io)
-- [Drizzle](https://orm.drizzle.team)
-- [Tailwind CSS](https://tailwindcss.com)
-- [tRPC](https://trpc.io)
+## Getting Started
 
-## Learn More
+### **Installation**
+```bash
+git clone https://github.com/rrajofficial7/anonGPT.git
+cd anonGPT
+npm install
+```
+setup your env's by cloning .env.example
+```bash
+cp .env.example .env
+```
+## **Contributing**
+We welcome contributions to anonGPT! If you have an idea for a feature or have found a bug, please feel free to fork the repository and submit a pull request. For major changes, please open an issue first to discuss what you would like to change.
 
-To learn more about the [T3 Stack](https://create.t3.gg/), take a look at the following resources:
-
-- [Documentation](https://create.t3.gg/)
-- [Learn the T3 Stack](https://create.t3.gg/en/faq#what-learning-resources-are-currently-available) — Check out these awesome tutorials
-
-You can check out the [create-t3-app GitHub repository](https://github.com/t3-oss/create-t3-app) — your feedback and contributions are welcome!
-
-## How do I deploy this?
-
-Follow our deployment guides for [Vercel](https://create.t3.gg/en/deployment/vercel), [Netlify](https://create.t3.gg/en/deployment/netlify) and [Docker](https://create.t3.gg/en/deployment/docker) for more information.
+### **How to Contributing**
+1. Fork the repository
+2. Create your feature branch (**git checkout -b feature/AmazingFeature**)
+3. Commit your changes (**git commit -m 'Add some AmazingFeature'**)
+4. Push to the branch (**git push origin feature/AmazingFeature**)
+5. Open a pull request
