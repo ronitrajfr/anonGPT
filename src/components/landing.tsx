@@ -3,6 +3,7 @@ import NavbarLanding from "./landingnav";
 import Link from "next/link";
 import { useSession, signIn } from "next-auth/react";
 import { useRouter } from "next/navigation";
+import Footer from "./footer";
 
 const Main = () => {
   const router = useRouter();
@@ -127,6 +128,7 @@ const Main = () => {
           </div>
         </section>
       </div>
+      <Footer></Footer>
     </div>
   );
 };
