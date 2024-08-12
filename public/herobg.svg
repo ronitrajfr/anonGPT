@@ -1,0 +1,54 @@
+<svg width="1440" height="1172" viewBox="0 0 1440 1172" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g clip-path="url(#clip0_470_11784)">
+<mask id="mask0_470_11784" style="mask-type:luminance" maskUnits="userSpaceOnUse" x="0" y="0" width="1440" height="1172">
+<path d="M1440 0H0V1172H1440V0Z" fill="white"/>
+</mask>
+<g mask="url(#mask0_470_11784)">
+<path d="M1440 0H0V1172H1440V0Z" fill="#020104"/>
+<g filter="url(#filter0_f_470_11784)">
+<path d="M758.177 499.354C943.842 499.354 1094.35 348.842 1094.35 163.177C1094.35 -22.4884 943.842 -173 758.177 -173C572.512 -173 422 -22.4884 422 163.177C422 348.842 572.512 499.354 758.177 499.354Z" fill="#3B3B3B" fill-opacity="0.52"/>
+</g>
+<g style="mix-blend-mode:soft-light">
+<path d="M187.5 26.3428V744.781" stroke="white" stroke-opacity="0.16" stroke-width="3"/>
+<path d="M885.922 26.3428V744.781" stroke="white" stroke-opacity="0.16" stroke-width="3"/>
+<path d="M186 24.8428H1513" stroke="white" stroke-opacity="0.16" stroke-width="3"/>
+<path d="M186 443.896H1513" stroke="white" stroke-opacity="0.16" stroke-width="3"/>
+<path d="M186 164.527H1513" stroke="white" stroke-opacity="0.16" stroke-width="3"/>
+<path d="M186 583.581H1513" stroke="white" stroke-opacity="0.16" stroke-width="3"/>
+<path d="M186 304.212H1513" stroke="white" stroke-opacity="0.16" stroke-width="3"/>
+<path d="M186 723.264H1513" stroke="white" stroke-opacity="0.16" stroke-width="3"/>
+<path d="M186 94.6855H1513" stroke="white" stroke-opacity="0.16" stroke-width="3"/>
+<path d="M186 513.74H1513" stroke="white" stroke-opacity="0.16" stroke-width="3"/>
+<path d="M186 234.369H1513" stroke="white" stroke-opacity="0.16" stroke-width="3"/>
+<path d="M186 653.422H1513" stroke="white" stroke-opacity="0.16" stroke-width="3"/>
+<path d="M186 374.055H1513" stroke="white" stroke-opacity="0.16" stroke-width="3"/>
+<path d="M466.869 26.3428V744.781" stroke="white" stroke-opacity="0.16" stroke-width="3"/>
+<path d="M1165.29 26.3428V744.781" stroke="white" stroke-opacity="0.16" stroke-width="3"/>
+<path d="M327.193 26.3428V744.781" stroke="white" stroke-opacity="0.16" stroke-width="3"/>
+<path d="M1025.61 26.3428V744.781" stroke="white" stroke-opacity="0.16" stroke-width="3"/>
+<path d="M606.551 26.3428V744.781" stroke="white" stroke-opacity="0.16" stroke-width="3"/>
+<path d="M1304.97 26.3428V744.781" stroke="white" stroke-opacity="0.16" stroke-width="3"/>
+<path d="M746.234 26.3428V744.781" stroke="white" stroke-opacity="0.16" stroke-width="3"/>
+<path d="M257.342 26.3428V744.781" stroke="white" stroke-opacity="0.16" stroke-width="3"/>
+<path d="M955.764 26.3428V744.781" stroke="white" stroke-opacity="0.16" stroke-width="3"/>
+<path d="M536.711 26.3428V744.781" stroke="white" stroke-opacity="0.16" stroke-width="3"/>
+<path d="M1235.13 26.3428V744.781" stroke="white" stroke-opacity="0.16" stroke-width="3"/>
+<path d="M397.023 26.3428V744.781" stroke="white" stroke-opacity="0.16" stroke-width="3"/>
+<path d="M1095.45 26.3428V744.781" stroke="white" stroke-opacity="0.16" stroke-width="3"/>
+<path d="M676.393 26.3428V744.781" stroke="white" stroke-opacity="0.16" stroke-width="3"/>
+<path d="M1374.81 26.3428V744.781" stroke="white" stroke-opacity="0.16" stroke-width="3"/>
+<path d="M816.078 26.3428V744.781" stroke="white" stroke-opacity="0.16" stroke-width="3"/>
+</g>
+</g>
+</g>
+<defs>
+<filter id="filter0_f_470_11784" x="22" y="-573" width="1472.35" height="1472.35" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+<feFlood flood-opacity="0" result="BackgroundImageFix"/>
+<feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape"/>
+<feGaussianBlur stdDeviation="200" result="effect1_foregroundBlur_470_11784"/>
+</filter>
+<clipPath id="clip0_470_11784">
+<rect width="1440" height="1172" fill="white"/>
+</clipPath>
+</defs>
+</svg>

@@ -44,7 +44,7 @@ const Sidebar = () => {
         <div className="items-center justify-center max-md:hidden">
           <Link
             href={"/home"}
-            className="flex items-center gap-2 pl-2 font-medium md:mt-10 md:hover:cursor-pointer md:hover:text-gray-200"
+            className="flex cursor-pointer items-center gap-2 pl-2 font-medium text-gray-200 md:mt-10"
           >
             <Search className="h-[20px] w-[20px] text-gray-300" />
             <h1 className="text-md font-medium text-gray-300 max-md:hidden sm:mr-4">
@@ -53,7 +53,7 @@ const Sidebar = () => {
           </Link>
           <Link
             href={"/discover"}
-            className="flex items-center gap-2 pl-2 font-medium md:mt-3 md:hover:cursor-pointer md:hover:text-gray-200"
+            className="cursor-pointertext-gray-200 flex items-center gap-2 pl-2 font-medium md:mt-3"
           >
             <Earth className="h-[20px] w-[20px] text-gray-300" />
             <h1 className="text-md font-medium text-gray-300 max-md:hidden sm:mr-4">

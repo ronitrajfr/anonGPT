@@ -73,7 +73,7 @@ const Chat = () => {
               </form>
             </div>
           )}
-          <div className="mb-28 mt-4 flex max-w-[800px] flex-col justify-center gap-4 rounded-xl p-4 text-white">
+          <div className="mb-28 mt-4 flex max-w-[800px] flex-col justify-center gap-4 rounded-xl p-4 text-white max-md:w-[600px] max-sm:w-[360px]">
             <div>
               {messages &&
                 messages.map((message, index) => (
