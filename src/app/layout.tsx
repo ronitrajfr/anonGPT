@@ -4,6 +4,8 @@ import { GeistSans } from "geist/font/sans";
 import { type Metadata } from "next";
 import Providers from "~/components/Provider";
 import { Toaster } from "~/components/ui/toaster";
+import Script from "next/script";
+
 export const metadata: Metadata = {
   title: "anonGPT",
   description:
@@ -32,6 +34,10 @@ export default function RootLayout({
           {children}
           <Toaster />
         </body>
+        <Script
+          src="https://cloud.umami.is/script.js"
+          data-website-id="10b8ce81-57ca-4a62-ba21-8f146020b50f"
+        />
       </Providers>
     </html>
   );
