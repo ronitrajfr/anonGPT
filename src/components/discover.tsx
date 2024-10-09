@@ -10,14 +10,13 @@ const Discover = () => {
   React.useEffect(() => {
     axios
       .get(
-        `https://newsapi.org/v2/everything?q=top-headlines&apiKey=${process.env.NEXT_PUBLIC_NEWS_API!}`,
+        `https://newsapi.org/v2/everything?q=top-headlines&apiKey=${process.env.NEXT_PUBLIC_NEWSAPIORG_API_KEY!}`,
       )
       .then((res) => {
-        console.log(res.data.articles);
         setData(res.data.articles);
       })
       .catch((err) => {
-        console.log(err);
+        console.error(err);
       });
   }, []);
   return (
