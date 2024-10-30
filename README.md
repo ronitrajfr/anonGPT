@@ -2,7 +2,7 @@
 </h1>
  <img width="1000" alt="header image" src="/header.png">
 
- 
+
 ### **Overview**
 **anonGPT** is an open-source AI-powered application designed to revolutionize the way you search for information. Unlike traditional search engines that require you to sift through countless links, Instant Info delivers concise, accurate, and relevant data directly to you—saving you time and effort.
 
